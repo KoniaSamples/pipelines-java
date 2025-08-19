@@ -34,8 +34,8 @@ stages:
     jobs:
       - template: docker-build-template.yml@templatesRepo
         parameters:
-          registryName: 'meuacr.azurecr.io'
-          imageName: 'api-recurso'
+          registryName: 'acrkoniasamples.azurecr.io'
+          imageName: 'api-koniasample'
           tag: $(Build.BuildId)
           artifactName: 'drop'
           
